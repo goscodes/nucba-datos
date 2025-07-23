@@ -32,7 +32,7 @@ body {
   background-color: var(--dark-bg);
   color: var(--light-text);
   font-family: var(--font);
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
 }
 
@@ -312,4 +312,164 @@ margin: 20px 0;
 
 .cta-card-container img{
   display: none;
+}
+
+
+/*footer*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  gap: 20px;
+  padding: 3rem 0;
+  margin: 0;
+  
+}
+
+.redes-nav{
+  display: flex;
+  gap: 20px
+}
+/*media*/
+@media(min-width: 1000px){
+
+/*header*/
+
+.btn-menu{
+  display: none;
+}
+
+.menu{
+  transform: translateX(0);
+  flex-direction: row;
+  order: 0;
+  width: fit-content;
+  position: static;
+}
+
+.menu li{
+  border: none;
+}
+
+
+.menu li a {
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover{
+  color: var(--primary)
+}
+
+
+.btn-container{
+  gap: 0;
+}
+
+.btn-login{
+  transition: all 0.3s ease;
+}
+
+
+.btn-login:hover{
+  background: var(--primary);
+  border: var(--primary);
+}
+
+/*section 1 HERO */
+
+.hero-text{
+  max-width: 700px;
+  gap: 40px;
+}
+
+
+.hero-text h1{
+  font-size: 3rem;
+}
+
+.hero-text p{
+  max-width: 600px ;
+}
+
+.hero-bg{
+  max-width: 100%;
+}
+
+
+/*product*/
+
+.product{
+  max-width: 1000px;
+}
+
+.product-text{
+  max-width: 600px ;
+}
+
+.product-img-container{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*section 3 about*/
+
+.about-cards-container{
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/*section 4 -testimonials*/
+
+
+.testimonials{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonials-cards-container{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*section 5 -cta*/
+
+.cta-card-container{
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  background-color: #343434;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 0 1rem;
+}
+.cta-card-container img{
+  display: block;
+}
+
+.cta-title{
+  align-items: flex-start;
+}
+
+
+/*footer*/
+footer{
+  flex-direction: row;
+  gap: 50px;
+}
+.footer-nav-container h3{
+  font-size: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--white);
+}
+
+
+.footer-nav{
+  padding: 10px 0;
+}
 }
